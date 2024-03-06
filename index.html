@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms Visualizer</title>
+    <link rel="stylesheet"  type="text/css" href="sorting.css"/>
+    <script src="sorting.js"></script>
+    <script src="Bubblesort.js"></script>
+    <script src="Insertionsort.js"></script>
+    <script src="Quicksort.js"></script>
+    <script src="Mergesort.js"></script>
+    <script src="Finalcall.js"></script>
+</head>
+<body>
+    <h1>Sorting Algorithms Visualizer</h1>
+    <div class="button-container">
+        <div class="generate-button">
+            <button id="generateArrayBtn" class="array-btn">Generate New Array</button>
+        </div>
+        <div class="sort-buttons">
+            <button id="bubbleSortBtn" class="sort-btn">Bubble Sort</button>
+            <button id="selectionSortBtn" class="sort-btn">Selection Sort</button>
+            <button id="insertionSortBtn" class="sort-btn">Insertion Sort</button>
+            <button id="quickSortBtn" class="sort-btn">Quick Sort</button>
+            <button id="mergeSortBtn" class="sort-btn">Merge Sort</button>
+        </div>
+    </div>
+    <div id="arrayBars"></div>
+    <div class="controls">
+        <label for="numElements">Number of Elements:</label>
+        <input type="range" id="numElements" min="10" max="200" value="50">
+        <label for="sortSpeed">Sort Speed:</label>
+        <input type="range" id="sortSpeed" min="1" max="100" value="50">
+    </div>
+</body>
